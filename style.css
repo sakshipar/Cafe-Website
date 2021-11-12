@@ -1,0 +1,402 @@
+*{
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+body{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+a{
+    color: #7C7B77;
+}
+#homeWrapper{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(images/cafepeach.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 1em;
+}
+header{
+	background-color: rgba(102, 52, 34, .7);
+    padding: 1em 0;
+}
+.logo{
+    width: 14%;
+    padding: .5em 0;
+}
+nav{
+    border-top: 5px solid #EF8C69;
+    border-bottom: 5px solid #EF8C69;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 100vw;
+    padding: 0 4em;
+}
+#homeWrapper nav a{
+    margin-left: 1.2em;
+}
+nav a{
+    padding-left: 1.5em;
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 1.9vw;
+    text-shadow: -1px 0px 0px #7C7B77;
+}
+nav a:hover{
+    color: #EF8C69;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: none;
+    transition: .2s;
+}
+.active{
+    color: #FFF;
+    text-decoration: underline;
+    text-shadow: -1px 0px 0px #C4C4C4;
+}
+.wrapper header{
+    background-color: rgba(102, 52, 34, .95);
+    padding: 0;
+    position: fixed;
+}
+.wrapper .logo{
+    margin-right: 15em;
+    width: 9%;
+}
+main{
+    padding: 10em 4em 0;
+    border-bottom: .1em solid #F6C9BC;
+}
+.body{
+    padding: 0 4em;
+}
+h1{
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #FFF;
+    font-size: 10vw;
+    padding: 15vw 0;
+    text-shadow: 3px 1px 3px #663422;
+}
+
+/*******Story********/
+#story img{
+    float: left;
+    width: 35vw;
+    border-radius: .3em;
+    box-shadow: 14px 15px 10px -9px #663422;
+    border: .1em solid #FFF;
+}
+h2{
+    clear: both;
+    font-family: 'Love Ya Like A Sister', cursive;
+    padding: .5em 0 0;
+    color: #663422;
+    font-size: 3em;
+    text-decoration: underline #EF8C69;
+    text-shadow: -1px 0px 0px #402015;
+}
+#story p{
+    margin: 1em 0;
+    color: #7C7B77;
+    font-size: 1.3em;
+}
+
+/*******Drinks/Food********/
+#coffee, #teaMenu, #breakfast, #lunch{
+    display: grid;
+    grid-template-areas:
+        "coffee1 coffee2 coffee3"
+        "coffee4 coffee coffee5"
+        "international international international"
+        "iced iced signature"
+        "hot hot extras";
+    grid-gap: 2em 5em;
+    margin-bottom: 2em;
+}
+#coffee1{grid-area: coffee1;}
+#coffee2{grid-area: coffee2;}
+#coffee3{grid-area: coffee3;}
+#coffee4{grid-area: coffee4;}
+#coffee5{grid-area: coffee5;}
+#title1{grid-area: coffee;}
+#international{grid-area: international;}
+#hot{grid-area: hot;}
+#iced{grid-area: iced;}
+#signature{grid-area: signature;}
+#extras{grid-area: extras;}
+ul{
+    list-style: url(images/bean.png);
+    color: #7C7B77;
+    font-size: 1.3em;
+}
+#teaMenu{
+    grid-template-areas:
+        "tea1 tea2 tea3"
+        "tea4 tea tea5"
+        "menu menu menu";
+}
+#tea1{grid-area: tea1;}
+#tea2{grid-area: tea2;}
+#tea3{grid-area: tea3;}
+#tea4{grid-area: tea4;}
+#tea5{grid-area: tea5;}
+#title2{grid-area: tea;}
+#tea{grid-area: menu;}
+#teaMenu ul{
+    list-style: url(images/teacup.png);
+}
+li{
+    margin: 1em 0 0 1.5em;
+    width: 100%;
+}
+#hot li, #iced li, #international li, #tea li, #food li{
+    float: left;
+    width: 45%;
+    border-bottom: .1em solid #F6C9BC;
+}
+#drinks h2, #food h2{
+    padding: 6vw 0;
+    text-align: center;
+}
+h3{
+    font-size: 2em;
+    border-bottom: solid #EF8C69;
+}
+#drinks img, #food img, #connect img, iframe{
+    border-radius: .3em;
+    box-shadow: 14px 15px 10px -9px #663422;
+    border: .1em solid #FFF;
+    width: 25vw;
+}
+#breakfast{
+    grid-template-areas:
+        "breakfast1 breakfast2 breakfast3"
+        "breakfast4 breakfast breakfast5"
+        "bmenu bmenu bmenu";
+}
+##breakfast1{grid-area: breakfast1;}
+#breakfast2{grid-area: breakfast2;}
+#breakfast3{grid-area: breakfast3;}
+#breakfast4{grid-area: breakfast4;}
+#breakfast5{grid-area: breakfast5;}
+#btitle{grid-area: breakfast;}
+#bmenu{grid-area: bmenu;}
+#lunch{
+    grid-gap: 2em 11em;
+    grid-template-areas:
+        "lunch1 lunch lunch2"
+        "lmenu lmenu lmenu";
+}
+#lunch1{grid-area: lunch1;}
+#lunch2{grid-area: lunch2;}
+#ltitle{grid-area: lunch;}
+#lmenu{grid-area: lmenu;}
+
+/*******Connect*******/
+#connect{
+    display: grid;
+    grid-template-areas: 
+        "connect1 connect2 connect4 connect3"
+        "contact contact visit visit"
+        "map map map map";
+    grid-gap: 2em;
+    font-size: .9em;
+}
+#contact{
+    grid-area: contact;
+    border-bottom: .1em solid #F6C9BC;
+}
+#connect1{grid-area: connect1;}
+#connect2{grid-area: connect2;}
+#connect3{grid-area: connect3;}
+#connect4{grid-area: connect4;}
+#visit{
+    grid-area: visit;
+    border-bottom: .1em solid #F6C9BC;
+}
+iframe{
+    grid-area: map; 
+    width: 100%;
+    margin-bottom: 2em;
+}
+#connect img{
+    width: 20vw;
+}
+#contact li{
+    list-style: url(images/contact.png);
+}
+#visit li{
+    width: 44%;
+    float: left;
+    list-style: url(images/location.png);
+}
+li#hour{
+    list-style: url(images/time.png);
+}
+/*******Footer********/
+footer{
+    background-color: rgba(102, 52, 34, .9);
+    color: #F6C9BC;
+    padding: 1em 1em 1em 4em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: inline-table;
+    justify-content: center;
+}
+footer p{
+    float: left;
+    font-size: 1.4vw;
+}
+footer img{
+    margin: 0 3em 0 0;
+    float: right;
+    width: 2vw;
+}
+.wrapper footer{
+    position: static;
+}
+
+
+/********MEDIA QUERY********/
+@media screen and (max-width: 600px) {
+    nav{
+        display: grid;
+        grid-template-areas: 
+            "logo home"
+            "logo about"
+            "logo drinks"
+            "logo food"
+            "logo connect";
+        padding: 0 2em;
+    }
+    .wrapper header, header{
+        background-color: rgba(102, 52, 34, .9);
+        position: relative;
+    }
+    nav a{
+        padding: 1em 0 0;
+        width: 100%;
+        font-size: 1em;
+        margin: .5em;
+        display: flex;
+        position: relative;
+    }
+    #home{grid-area: home;}
+    #about{grid-area: about;}
+    #drinks{grid-area: drinks;}
+    #food{grid-area: food;}
+    #connectus{
+        grid-area: connect; 
+        padding-bottom: 1em;
+    }
+    .logo, .wrapper .logo{
+        grid-area: logo;
+        width: 100%;
+        margin: 0;
+    }
+    #homeWrapper{
+        padding: 0;
+        background: none;
+        min-height: 100vh;
+    }
+    .body{
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(images/cafepeach.jpeg);
+        background-size: 100%;
+        background-position: center;
+        padding-left: 2em;
+    }
+    main{
+        padding: 1em 2em; 
+    }
+    #story img{
+        clear: both;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    #coffee{
+        grid-template-areas: 
+        "coffee"
+        "coffee1"
+        "coffee2"
+        "coffee3"
+        "coffee4"
+        "coffee5"
+        "international"
+        "hot"
+        "iced"
+        "signature"
+        "extras";
+    }
+    #teaMenu{
+        grid-template-areas: 
+            "tea"
+            "tea1"
+            "tea2"
+            "tea3"
+            "tea4"
+            "tea5"
+            "menu";
+    }
+    #breakfast{
+        grid-template-areas: 
+        "breakfast"
+        "breakfast1"
+        "breakfast2"
+        "breakfast3"
+        "breakfast4"
+        "breakfast5"
+        "bmenu";
+    }
+    #lunch{
+        grid-template-areas: 
+            "lunch"
+            "lunch1"
+            "lunch2"
+            "lmenu";
+    }
+    #connect{
+        grid-template-areas: 
+            "contact contact"
+            "connect1 connect2"
+            "visit visit"
+            "connect3 connect4"
+            "map map"
+    }
+    #drinks h2, #food h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    li{
+        width: 100%;
+        font-size: .8em;
+    }
+    #drinks img, #food img, #connect img{
+        width: 100%;
+    }
+    footer{
+        position: inherit;
+        padding: .4em 2em;
+        display: flex;
+        justify-content: center;
+    }
+    footer p{
+        width: 100%;
+        font-size: .7em
+    }
+    footer img{
+        clear: both;
+        margin: 1vw 0 1vw 5vw;
+        padding: 0;
+    }
+}
